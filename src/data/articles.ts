@@ -1,10 +1,6 @@
 import { Article } from "../types";
 import { getCategories } from "./categories";
 
-function img(seed: string, w = 800, h = 600): string {
-  return `https://picsum.photos/seed/${seed}/${w}/${h}`;
-}
-
 const RAW: Array<Omit<Article, "categories"> & { categoryIds: string[] }> = [
   {
     id: "1",
